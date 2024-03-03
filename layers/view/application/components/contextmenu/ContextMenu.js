@@ -1,0 +1,11 @@
+import BaseComponent from '../base/BaseComponent';
+class ContextMenu extends BaseComponent {
+    constructor(style) {
+        super({
+            background: 'green',
+            ...(style ?? {}),
+        });
+    }
+}
+export default ContextMenu;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGV4dE1lbnUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvbGF5ZXJzL3ZpZXcvYXBwbGljYXRpb24vY29tcG9uZW50cy9jb250ZXh0bWVudS9Db250ZXh0TWVudS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxPQUFPLGFBQWEsTUFBTSx1QkFBdUIsQ0FBQTtBQUdqRCxNQUFNLFdBQVksU0FBUSxhQUFhO0lBQ3JDLFlBQVksS0FBa0I7UUFDNUIsS0FBSyxDQUFDO1lBQ0osVUFBVSxFQUFFLE9BQU87WUFDbkIsR0FBRyxDQUFDLEtBQUssSUFBSSxFQUFFLENBQUM7U0FDakIsQ0FBQyxDQUFBO0lBQ0osQ0FBQztDQUNGO0FBRUQsZUFBZSxXQUFXLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSUFueU9iamVjdCBmcm9tICcuLi8uLi8uLi8uLi8uLi9jb21tb24vbW9kZWxzL0lBbnlPYmplY3QnXG5pbXBvcnQgQmFzZUNvbXBvbmVudCBmcm9tICcuLi9iYXNlL0Jhc2VDb21wb25lbnQnXG5pbXBvcnQgSUNvbnRleHRNZW51IGZyb20gJy4uL2Jhc2UvbW9kZWwvSUNvbnRleHRNZW51J1xuXG5jbGFzcyBDb250ZXh0TWVudSBleHRlbmRzIEJhc2VDb21wb25lbnQgaW1wbGVtZW50cyBJQ29udGV4dE1lbnUge1xuICBjb25zdHJ1Y3RvcihzdHlsZT86IElBbnlPYmplY3QpIHtcbiAgICBzdXBlcih7XG4gICAgICBiYWNrZ3JvdW5kOiAnZ3JlZW4nLFxuICAgICAgLi4uKHN0eWxlID8/IHt9KSxcbiAgICB9KVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IENvbnRleHRNZW51XG4iXX0=

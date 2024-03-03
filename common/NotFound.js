@@ -1,0 +1,6 @@
+import { jsx as _jsx, Fragment as _Fragment } from "react/jsx-runtime";
+function NotFound() {
+    return (_jsx(_Fragment, { children: _jsx("div", { style: { background: 'black', color: 'white', border: '1px solid red' }, children: " Path notfound" }) }));
+}
+export default NotFound;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTm90Rm91bmQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29tbW9uL05vdEZvdW5kLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBRUEsU0FBUyxRQUFRO0lBQ2YsT0FBTyxDQUNMLDRCQUNFLGNBQUssS0FBSyxFQUFFLEVBQUUsVUFBVSxFQUFFLE9BQU8sRUFBRSxLQUFLLEVBQUUsT0FBTyxFQUFFLE1BQU0sRUFBRSxlQUFlLEVBQUUsK0JBQXNCLEdBQ2pHLENBQ0osQ0FBQTtBQUNILENBQUM7QUFFRCxlQUFlLFFBQVEsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcblxuZnVuY3Rpb24gTm90Rm91bmQoKSB7XG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxkaXYgc3R5bGU9e3sgYmFja2dyb3VuZDogJ2JsYWNrJywgY29sb3I6ICd3aGl0ZScsIGJvcmRlcjogJzFweCBzb2xpZCByZWQnIH19PiBQYXRoIG5vdGZvdW5kPC9kaXY+XG4gICAgPC8+XG4gIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgTm90Rm91bmRcbiJdfQ==

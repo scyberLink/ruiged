@@ -1,0 +1,12 @@
+import BaseComponent from './base/BaseComponent';
+class ParserContainer extends BaseComponent {
+    constructor(style) {
+        super({
+            display: 'none',
+            position: 'initial',
+            ...(style ?? {}),
+        });
+    }
+}
+export default ParserContainer;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGFyc2VyQ29udGFpbmVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vc3JjL2xheWVycy92aWV3L2FwcGxpY2F0aW9uL2NvbXBvbmVudHMvUGFyc2VyQ29udGFpbmVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLE9BQU8sYUFBYSxNQUFNLHNCQUFzQixDQUFBO0FBR2hELE1BQU0sZUFBZ0IsU0FBUSxhQUFhO0lBQ3pDLFlBQVksS0FBa0I7UUFDNUIsS0FBSyxDQUFDO1lBQ0osT0FBTyxFQUFFLE1BQU07WUFDZixRQUFRLEVBQUUsU0FBUztZQUNuQixHQUFHLENBQUMsS0FBSyxJQUFJLEVBQUUsQ0FBQztTQUNqQixDQUFDLENBQUE7SUFDSixDQUFDO0NBQ0Y7QUFFRCxlQUFlLGVBQWUsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBJQW55T2JqZWN0IGZyb20gJy4uLy4uLy4uLy4uL2NvbW1vbi9tb2RlbHMvSUFueU9iamVjdCdcbmltcG9ydCBCYXNlQ29tcG9uZW50IGZyb20gJy4vYmFzZS9CYXNlQ29tcG9uZW50J1xuaW1wb3J0IElQYXJzZXJDb250YWluZXIgZnJvbSAnLi9iYXNlL21vZGVsL0lQYXJzZXJDb250YWluZXInXG5cbmNsYXNzIFBhcnNlckNvbnRhaW5lciBleHRlbmRzIEJhc2VDb21wb25lbnQgaW1wbGVtZW50cyBJUGFyc2VyQ29udGFpbmVyIHtcbiAgY29uc3RydWN0b3Ioc3R5bGU/OiBJQW55T2JqZWN0KSB7XG4gICAgc3VwZXIoe1xuICAgICAgZGlzcGxheTogJ25vbmUnLFxuICAgICAgcG9zaXRpb246ICdpbml0aWFsJyxcbiAgICAgIC4uLihzdHlsZSA/PyB7fSksXG4gICAgfSlcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBQYXJzZXJDb250YWluZXJcbiJdfQ==

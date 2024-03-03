@@ -1,0 +1,14 @@
+/* eslint-disable require-jsdoc */
+import Fetcher from './Fetcher';
+class SharedFetcher extends Fetcher {
+    constructor() {
+        if (!SharedFetcher.instance) {
+            super();
+            SharedFetcher.instance = this;
+        }
+        return SharedFetcher.instance;
+    }
+}
+const fetcher = new SharedFetcher();
+export default fetcher;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2hhcmVkRmV0Y2hlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tb24vU2hhcmVkRmV0Y2hlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxrQ0FBa0M7QUFDbEMsT0FBTyxPQUFPLE1BQU0sV0FBVyxDQUFBO0FBRS9CLE1BQU0sYUFBYyxTQUFRLE9BQU87SUFDakM7UUFDRSxJQUFJLENBQUMsYUFBYSxDQUFDLFFBQVEsRUFBRTtZQUMzQixLQUFLLEVBQUUsQ0FBQTtZQUNQLGFBQWEsQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFBO1NBQzlCO1FBQ0QsT0FBTyxhQUFhLENBQUMsUUFBUSxDQUFBO0lBQy9CLENBQUM7Q0FDRjtBQUVELE1BQU0sT0FBTyxHQUFHLElBQUksYUFBYSxFQUFFLENBQUE7QUFDbkMsZUFBZSxPQUFPLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlc2xpbnQtZGlzYWJsZSByZXF1aXJlLWpzZG9jICovXG5pbXBvcnQgRmV0Y2hlciBmcm9tICcuL0ZldGNoZXInXG5cbmNsYXNzIFNoYXJlZEZldGNoZXIgZXh0ZW5kcyBGZXRjaGVyIHtcbiAgY29uc3RydWN0b3IoKSB7XG4gICAgaWYgKCFTaGFyZWRGZXRjaGVyLmluc3RhbmNlKSB7XG4gICAgICBzdXBlcigpXG4gICAgICBTaGFyZWRGZXRjaGVyLmluc3RhbmNlID0gdGhpc1xuICAgIH1cbiAgICByZXR1cm4gU2hhcmVkRmV0Y2hlci5pbnN0YW5jZVxuICB9XG59XG5cbmNvbnN0IGZldGNoZXIgPSBuZXcgU2hhcmVkRmV0Y2hlcigpXG5leHBvcnQgZGVmYXVsdCBmZXRjaGVyXG4iXX0=

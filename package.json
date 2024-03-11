@@ -1,8 +1,8 @@
 {
   "name": "ruiged",
-  "version": "0.1.21",
+  "version": "0.1.24",
   "description": "Ruig Extension Development",
-  "main": "./extension/ruigedExtensionInterface.js",
+  "main": "./extension/RuigExtensionInterface.js",
   "directories": {
     "application": "layers/view/application",
     "design": "layers/view/design",
@@ -19,7 +19,7 @@
   ],
   "author": "Emmanuel Paul Elom",
   "license": "MIT",
-  "types": "./extension/ruigedExtensionInterface.d.ts",
+  "types": "./extension/RuigExtensionInterface.d.ts",
   "bugs": {
     "url": "https://github.com/scyberLink/ruiged/issues"
   },

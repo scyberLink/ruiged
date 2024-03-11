@@ -2,7 +2,8 @@ import IAppContainer from '../layers/view/application/components/base/model/IApp
 import BaseExtension from './BaseExtension';
 import IExtension from './IExtension';
 declare class ExtensionLoader {
-    load(code: string, appContainer: IAppContainer): BaseExtension;
+    private extensionFileManager;
+    load(extension: IExtension, appContainer: IAppContainer): Promise<BaseExtension>;
     getExtension(id: string, builtin?: boolean): Promise<IExtension | null>;
     private executor;
 }

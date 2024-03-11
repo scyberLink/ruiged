@@ -1,17 +1,16 @@
-import BaseComponent from '../../base/BaseComponent';
-class DrawingToolBar extends BaseComponent {
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const BaseComponent_1 = __importDefault(require("../../base/BaseComponent"));
+class DrawingToolBar extends BaseComponent_1.default {
     constructor(style) {
-        super({
-            ...(style ?? {}),
-            display: 'flex',
-            'flex-wrap': 'nowrap',
-            'flex-direction': 'column',
-            'justify-content': 'space-around',
-        });
+        super(Object.assign(Object.assign({}, (style !== null && style !== void 0 ? style : {})), { display: 'flex', 'flex-wrap': 'nowrap', 'flex-direction': 'column', 'justify-content': 'space-around' }));
     }
     appendChildren(...children) {
         super.appendChildren(...children);
     }
 }
-export default DrawingToolBar;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRHJhd2luZ1Rvb2xCYXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi8uLi9zcmMvbGF5ZXJzL3ZpZXcvYXBwbGljYXRpb24vY29tcG9uZW50cy9zaWRlYmFycy9kcmF3aW5ndG9vbGJhci9EcmF3aW5nVG9vbEJhci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxPQUFPLGFBQWEsTUFBTSwwQkFBMEIsQ0FBQTtBQUlwRCxNQUFNLGNBQWUsU0FBUSxhQUFhO0lBQ3hDLFlBQVksS0FBa0I7UUFDNUIsS0FBSyxDQUFDO1lBQ0osR0FBRyxDQUFDLEtBQUssSUFBSSxFQUFFLENBQUM7WUFDaEIsT0FBTyxFQUFFLE1BQU07WUFDZixXQUFXLEVBQUUsUUFBUTtZQUNyQixnQkFBZ0IsRUFBRSxRQUFRO1lBQzFCLGlCQUFpQixFQUFFLGNBQWM7U0FDbEMsQ0FBQyxDQUFBO0lBQ0osQ0FBQztJQUVELGNBQWMsQ0FBQyxHQUFHLFFBQThCO1FBQzlDLEtBQUssQ0FBQyxjQUFjLENBQUMsR0FBRyxRQUFRLENBQUMsQ0FBQTtJQUNuQyxDQUFDO0NBQ0Y7QUFFRCxlQUFlLGNBQWMsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBJQW55T2JqZWN0IGZyb20gJy4uLy4uLy4uLy4uLy4uLy4uL2NvbW1vbi9tb2RlbHMvSUFueU9iamVjdCdcbmltcG9ydCBCYXNlQ29tcG9uZW50IGZyb20gJy4uLy4uL2Jhc2UvQmFzZUNvbXBvbmVudCdcbmltcG9ydCBJRHJhd2luZ1Rvb2xCYXIgZnJvbSAnLi4vLi4vYmFzZS9tb2RlbC9JRHJhd2luZ1Rvb2xCYXInXG5pbXBvcnQgRHJhd2luZ1Rvb2xiYXJJdGVtIGZyb20gJy4vRHJhd2luZ1Rvb2xiYXJJdGVtJ1xuXG5jbGFzcyBEcmF3aW5nVG9vbEJhciBleHRlbmRzIEJhc2VDb21wb25lbnQgaW1wbGVtZW50cyBJRHJhd2luZ1Rvb2xCYXIge1xuICBjb25zdHJ1Y3RvcihzdHlsZT86IElBbnlPYmplY3QpIHtcbiAgICBzdXBlcih7XG4gICAgICAuLi4oc3R5bGUgPz8ge30pLFxuICAgICAgZGlzcGxheTogJ2ZsZXgnLFxuICAgICAgJ2ZsZXgtd3JhcCc6ICdub3dyYXAnLFxuICAgICAgJ2ZsZXgtZGlyZWN0aW9uJzogJ2NvbHVtbicsXG4gICAgICAnanVzdGlmeS1jb250ZW50JzogJ3NwYWNlLWFyb3VuZCcsXG4gICAgfSlcbiAgfVxuXG4gIGFwcGVuZENoaWxkcmVuKC4uLmNoaWxkcmVuOiBEcmF3aW5nVG9vbGJhckl0ZW1bXSk6IHZvaWQge1xuICAgIHN1cGVyLmFwcGVuZENoaWxkcmVuKC4uLmNoaWxkcmVuKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IERyYXdpbmdUb29sQmFyXG4iXX0=
+exports.default = DrawingToolBar;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRHJhd2luZ1Rvb2xCYXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi8uLi9zcmMvbGF5ZXJzL3ZpZXcvYXBwbGljYXRpb24vY29tcG9uZW50cy9zaWRlYmFycy9kcmF3aW5ndG9vbGJhci9EcmF3aW5nVG9vbEJhci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztBQUNBLDZFQUFvRDtBQUlwRCxNQUFNLGNBQWUsU0FBUSx1QkFBYTtJQUN4QyxZQUFZLEtBQWtCO1FBQzVCLEtBQUssaUNBQ0EsQ0FBQyxLQUFLLGFBQUwsS0FBSyxjQUFMLEtBQUssR0FBSSxFQUFFLENBQUMsS0FDaEIsT0FBTyxFQUFFLE1BQU0sRUFDZixXQUFXLEVBQUUsUUFBUSxFQUNyQixnQkFBZ0IsRUFBRSxRQUFRLEVBQzFCLGlCQUFpQixFQUFFLGNBQWMsSUFDakMsQ0FBQTtJQUNKLENBQUM7SUFFRCxjQUFjLENBQUMsR0FBRyxRQUE4QjtRQUM5QyxLQUFLLENBQUMsY0FBYyxDQUFDLEdBQUcsUUFBUSxDQUFDLENBQUE7SUFDbkMsQ0FBQztDQUNGO0FBRUQsa0JBQWUsY0FBYyxDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IElBbnlPYmplY3QgZnJvbSAnLi4vLi4vLi4vLi4vLi4vLi4vY29tbW9uL21vZGVscy9JQW55T2JqZWN0J1xuaW1wb3J0IEJhc2VDb21wb25lbnQgZnJvbSAnLi4vLi4vYmFzZS9CYXNlQ29tcG9uZW50J1xuaW1wb3J0IElEcmF3aW5nVG9vbEJhciBmcm9tICcuLi8uLi9iYXNlL21vZGVsL0lEcmF3aW5nVG9vbEJhcidcbmltcG9ydCBEcmF3aW5nVG9vbGJhckl0ZW0gZnJvbSAnLi9EcmF3aW5nVG9vbGJhckl0ZW0nXG5cbmNsYXNzIERyYXdpbmdUb29sQmFyIGV4dGVuZHMgQmFzZUNvbXBvbmVudCBpbXBsZW1lbnRzIElEcmF3aW5nVG9vbEJhciB7XG4gIGNvbnN0cnVjdG9yKHN0eWxlPzogSUFueU9iamVjdCkge1xuICAgIHN1cGVyKHtcbiAgICAgIC4uLihzdHlsZSA/PyB7fSksXG4gICAgICBkaXNwbGF5OiAnZmxleCcsXG4gICAgICAnZmxleC13cmFwJzogJ25vd3JhcCcsXG4gICAgICAnZmxleC1kaXJlY3Rpb24nOiAnY29sdW1uJyxcbiAgICAgICdqdXN0aWZ5LWNvbnRlbnQnOiAnc3BhY2UtYXJvdW5kJyxcbiAgICB9KVxuICB9XG5cbiAgYXBwZW5kQ2hpbGRyZW4oLi4uY2hpbGRyZW46IERyYXdpbmdUb29sYmFySXRlbVtdKTogdm9pZCB7XG4gICAgc3VwZXIuYXBwZW5kQ2hpbGRyZW4oLi4uY2hpbGRyZW4pXG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgRHJhd2luZ1Rvb2xCYXJcbiJdfQ==

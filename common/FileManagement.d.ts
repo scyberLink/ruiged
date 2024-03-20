@@ -1,16 +1,17 @@
 import { IDBPDatabase } from 'idb';
-type TABLE = 'metas' | 'assets';
+export declare enum Table {
+    METAS = "metas",
+    ASSETS = "assets"
+}
 declare class FileManagement {
     db: IDBPDatabase<unknown>;
     open(): Promise<void>;
-    saveFile(fileName: string, fileContent: string | Blob, type: string, table?: TABLE): Promise<void>;
+    saveFile(fileName: string, fileContent: string | Blob, type: string, table?: Table): Promise<void>;
     getMime(extension: string): string;
-    getFile(fileName: string, table?: TABLE): Promise<any>;
+    getFile(fileName: string, table?: Table): Promise<any>;
     close(): void;
     private KEYPATH;
     private DATABASE;
     private DATABASE_VERSION;
-    private ASSET_TABLE;
-    private METAS_TABLE;
 }
 export default FileManagement;

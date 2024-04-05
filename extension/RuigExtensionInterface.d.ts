@@ -19,13 +19,14 @@ import LeftSideBar from '../layers/view/application/components/sidebars/leftside
 import StatusBar from '../layers/view/application/components/statusbar/StatusBar';
 import TabPane from '../layers/view/application/components/tabpane/TabPane';
 import ToolBar from '../layers/view/application/components/toolbar/ToolBar';
+import DesignElementTypes from '../layers/view/common/DesignElementTypes';
+import DesignElement from '../layers/view/design/DesignElement';
 import BaseComponent from '../layers/view/design/base/BaseDesignComponent';
 import BaseExtension from './BaseExtension';
 import ExtensionDevelopment from './ExtensionDevelopment';
 declare const REI: {
     BaseExtension: typeof BaseExtension;
     ExtensionDevelopment: typeof ExtensionDevelopment;
-    AppContainer: typeof AppContainer;
     ActionBar: typeof ActionBar;
     BaseComponent: typeof BaseComponent;
     ColorPalette: typeof ColorPalette;
@@ -47,6 +48,9 @@ declare const REI: {
     ContextMenu: typeof ContextMenu;
     register: typeof register;
     registerElement: typeof registerElement;
+    AppContainer: typeof AppContainer;
+    DesignElement: typeof DesignElement;
+    DesignElementTypes: typeof DesignElementTypes;
     RuigRouting: typeof RuigRouting;
 };
 export default REI;

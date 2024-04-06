@@ -1,4 +1,3 @@
-import RuigRouting from '../RuigRouting';
 import { registerElement, register } from '../customElementRegistration';
 import ParserContainer from '../layers/view/application/components/ParserContainer';
 import ActionBar from '../layers/view/application/components/actionbar/ActionBar';
@@ -51,6 +50,5 @@ declare const REI: {
     AppContainer: typeof AppContainer;
     DesignElement: typeof DesignElement;
     DesignElementTypes: typeof DesignElementTypes;
-    RuigRouting: typeof RuigRouting;
 };
 export default REI;

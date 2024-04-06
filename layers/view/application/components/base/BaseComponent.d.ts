@@ -8,6 +8,8 @@ declare class BaseComponent extends HTMLElement implements IDelegateModel {
     protected shadowStyle: HTMLStyleElement;
     private _scale;
     private _rotate;
+    private initialDisplay;
+    private showing;
     get rotate(): number;
     set rotate(value: number);
     get scale(): number;
@@ -42,6 +44,7 @@ declare class BaseComponent extends HTMLElement implements IDelegateModel {
     set id(value: string);
     get textContent(): string;
     set textContent(value: string);
+    toggleDisplay(): void;
     get lang(): string;
     set lang(value: string);
     get offsetHeight(): number;

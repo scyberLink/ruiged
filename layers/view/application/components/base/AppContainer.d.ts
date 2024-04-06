@@ -19,7 +19,6 @@ import IAppContainer from './model/IAppContainer';
 import BaseExtension from '../../../../../extension/BaseExtension';
 import ExtensionDevelopment from '../../../../../extension/ExtensionDevelopment';
 import DrawingToolbarItem from '../sidebars/drawingtoolbar/DrawingToolbarItem';
-import RuigRouting from '../../../../../RuigRouting';
 import { register, registerElement } from '../../../../../customElementRegistration';
 import ObjectManagerSelector from '../objectmanagerselector/ObjectManagerSelector';
 import DesignElement from '../../../design/DesignElement';
@@ -68,7 +67,6 @@ declare class AppContainer extends BaseComponent implements IAppContainer {
         AppContainer: typeof AppContainer;
         DesignElement: typeof DesignElement;
         DesignElementTypes: typeof DesignElementTypes;
-        RuigRouting: typeof RuigRouting;
     };
     constructor();
     getMenuBar(): MenuBar;

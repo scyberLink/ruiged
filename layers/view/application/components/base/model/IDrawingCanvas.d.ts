@@ -1,5 +1,6 @@
 import IPosition from '../../../../../../common/models/IPosition';
-interface IDrawingCanvas {
+import BaseComponent from '../BaseComponent';
+interface IDrawingCanvas extends BaseComponent {
     addDesignElement(element: HTMLElement, position?: IPosition): HTMLElement;
 }
 export default IDrawingCanvas;

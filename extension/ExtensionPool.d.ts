@@ -27,8 +27,8 @@ declare class ExtensionPool {
     dispatchEvent(id: string, eventType: string): void;
     private init;
     loadExtension(load?: boolean): void;
-    install(id: string): Promise<boolean>;
-    manualInstall(extension: IExtension): boolean;
+    install(id: string, activate?: boolean): Promise<boolean>;
+    manualInstall(extension: IExtension, activate?: boolean): boolean;
     uninstall(id: string): any;
     private remove;
     private delete;

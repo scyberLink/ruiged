@@ -101,7 +101,7 @@ declare class BaseDesignComponent extends HTMLElement implements IDelegateModel 
     addClassNames(...classNames: string[]): void;
     removeClassNames(...classNames: string[]): void;
     replaceClassName(oldClassName: string, newClassName: string): boolean;
-    static register(element: typeof BaseDesignComponent | typeof HTMLElement): typeof BaseDesignComponent | typeof HTMLElement;
+    static new(element: BaseDesignComponent | HTMLElement): BaseDesignComponent;
     setScale(scale: number): void;
     ondragover: (event: DragEvent) => void;
     ondrop: (event: DragEvent) => void;

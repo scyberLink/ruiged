@@ -13,6 +13,7 @@ export declare const DECADE = 315360000000;
 export declare const MIN_Z_INDEX = "-99999";
 export declare const MAX_Z_INDEX = "99999";
 export declare const ACTIVE_ELEMENT = "selectedElement";
+export declare const ACTIVE_TOOL = "activeTool";
 export declare const DRAWING_CANVAS = "drawingCanvas";
 export declare const DRAWING_CANVAS_MOUSE_COORDINATE = "mouseCoordinate";
 export declare const DESIGN_ELEMENT_WRAPPER = "designElementWrapper";

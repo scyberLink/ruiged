@@ -23,6 +23,7 @@ import { register, registerElement } from '../../../../../customElementRegistrat
 import ObjectManagerSelector from '../objectmanagerselector/ObjectManagerSelector';
 import DesignElement from '../../../design/DesignElement';
 import DesignElementTypes from '../../../common/DesignElementTypes';
+import IDrawingCanvas from './model/IDrawingCanvas';
 declare class AppContainer extends BaseComponent implements IAppContainer {
     private menuBar;
     private toolBar;
@@ -75,7 +76,7 @@ declare class AppContainer extends BaseComponent implements IAppContainer {
     getHorizontalRuler(): BaseComponent;
     getVerticalRuler(): BaseComponent;
     getDrawingToolBar(): BaseComponent;
-    getDrawingCanvas(): BaseComponent;
+    getDrawingCanvas(): IDrawingCanvas;
     getColorPalette(): BaseComponent;
     getVerticalScrollBar(): BaseComponent;
     getHorizontalScrollBar(): BaseComponent;

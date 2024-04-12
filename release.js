@@ -27,6 +27,7 @@ pkg.version = latest;
 fs.writeFileSync(pkgPath, JSON.stringify(pkg));
 
 try {
+    execSync('git add .');
     execSync(`git commit -asm "v${latest}"`);
     execSync('git push');
     execSync('npm publish');

@@ -50,6 +50,6 @@ declare const REI: {
     AppContainer: typeof AppContainer;
     DesignElement: typeof DesignElement;
     DesignElementTypes: typeof DesignElementTypes;
-    App: import("react/jsx-runtime").JSX.Element;
+    App: (extensions?: never[]) => import("react/jsx-runtime").JSX.Element;
 };
 export default REI;

@@ -2,6 +2,7 @@ import type IAnyObject from '../../../../../common/models/IAnyObject';
 import type IPair from '../../../../../common/models/IPair';
 import ShadowMode from '../../common/ShadowMode';
 import type IDelegateModel from './IDelegateModel';
+import IStyle from './model/IStyle';
 declare class BaseComponent extends HTMLElement implements IDelegateModel {
     protected shadow: ShadowRoot;
     protected shadowWrapper: HTMLElement;
@@ -14,7 +15,7 @@ declare class BaseComponent extends HTMLElement implements IDelegateModel {
     set rotate(value: number);
     get scale(): number;
     set scale(value: number);
-    constructor(style?: IAnyObject, mode?: ShadowMode);
+    constructor(style?: IStyle, mode?: ShadowMode);
     removeChild<T extends Node>(child: T): T;
     get accessKey(): string;
     set accessKey(value: string);
@@ -38,6 +39,7 @@ declare class BaseComponent extends HTMLElement implements IDelegateModel {
     set dir(value: string);
     get draggable(): boolean;
     set draggable(value: boolean);
+    get children(): HTMLCollection;
     get hidden(): boolean;
     set hidden(value: boolean);
     get id(): string;

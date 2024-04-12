@@ -1,6 +1,6 @@
 import IAnyObject from '../../../../common/models/IAnyObject';
 import DesignElementTypes from '../../common/DesignElementTypes';
-import DesignElement from '../../design/DesignElement';
+import DesignElement from '../../design/base/DesignElement';
 import BaseComponent from '../components/base/BaseComponent';
 import IAction, { IActionInit } from './IAction';
 import ShadowMode from './ShadowMode';

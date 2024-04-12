@@ -21,9 +21,9 @@ import ExtensionDevelopment from '../../../../../extension/ExtensionDevelopment'
 import DrawingToolbarItem from '../sidebars/drawingtoolbar/DrawingToolbarItem';
 import { register, registerElement } from '../../../../../customElementRegistration';
 import ObjectManagerSelector from '../objectmanagerselector/ObjectManagerSelector';
-import DesignElement from '../../../design/DesignElement';
-import DesignElementTypes from '../../../common/DesignElementTypes';
 import IDrawingCanvas from './model/IDrawingCanvas';
+import DesignElementTypes from '../../../common/DesignElementTypes';
+import DesignElement from '../../../design/base/DesignElement';
 declare class AppContainer extends BaseComponent implements IAppContainer {
     private menuBar;
     private toolBar;

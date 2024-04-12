@@ -51,7 +51,7 @@ declare const REI: {
     DesignElement: typeof DesignElement;
     DesignElementTypes: typeof DesignElementTypes;
     App: ({ extensions }: {
-        extensions?: never[] | undefined;
+        extensions?: BaseExtension[] | undefined;
     }) => import("react/jsx-runtime").JSX.Element;
 };
 export default REI;
